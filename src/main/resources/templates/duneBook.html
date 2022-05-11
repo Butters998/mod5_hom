@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr th:each="duneModel: ${duneModels}">
+        <td th:text="${duneModel.getId()}"></td>
+        <td th:text="${duneModel.getTitle()}"></td>
+        <td th:text="${duneModel.getAuthor()}"></td>
+        <td th:text="${duneModel.getYear()}"></td>
+    </tr>
+</table>
+
+
+</body>
+</html>
